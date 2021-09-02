@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarea5-Dweb</title>
     <link rel="stylesheet" href="./css/estilo.css" />
-    
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header class="header-home">
@@ -40,7 +40,7 @@
     </section>
     <!-- Juguetes-Hombres -->
     <section class="seccion2">
-      <div class="container">
+      <div class="container" id="divProducts">
         <article class="productos">
           <figure class="foto-juguetes">
             <img src="./img/toy-boys.jpg" alt="" />
@@ -162,10 +162,18 @@
         <div class="formulario">
           <form action="">
             <label for="">Nombre del producto</label>
-            <input type="text" id="pName" placeholder="Ingrese el nombre del producto">
+            <input
+              type="text"
+              id="pName"
+              placeholder="Ingrese el nombre del producto"
+            />
 
             <label for="">Ingrese el precio del producto</label>
-            <input type="number" id="pPrice" placeholder="Ingrese el precio del producto">
+            <input
+              type="number"
+              id="pPrice"
+              placeholder="Ingrese el precio del producto"
+            />
 
             <label for="">Categoria del producto</label>
             <select name="" id="sProduct">
@@ -174,9 +182,11 @@
               <option value="Ferreteria">Ferreteria</option>
             </select>
 
-            <input type="file" id="pDocument">
+            <input type="file" id="pDocument" />
 
-            <button class="btnProduct">Agregar Producto</button>
+            <button type="button" class="btnProduct" onclick="addProduct()">
+              Agregar Producto
+            </button>
           </form>
         </div>
       </div>
